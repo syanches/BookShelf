@@ -3,25 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		283CFC9022B14D8000C65BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CFC8F22B14D8000C65BD0 /* AppDelegate.swift */; };
-		283CFC9222B14D8000C65BD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CFC9122B14D8000C65BD0 /* ViewController.swift */; };
 		283CFC9522B14D8000C65BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283CFC9322B14D8000C65BD0 /* Main.storyboard */; };
 		283CFC9722B14D8200C65BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283CFC9622B14D8200C65BD0 /* Assets.xcassets */; };
 		283CFC9A22B14D8200C65BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283CFC9822B14D8200C65BD0 /* LaunchScreen.storyboard */; };
+		2869282B22BA30B40005AFE2 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2869282A22BA30B40005AFE2 /* ARViewController.swift */; };
+		2869283122BA93AB0005AFE2 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2869283022BA93AB0005AFE2 /* Book.swift */; };
+		2869283322BA93FA0005AFE2 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2869283222BA93FA0005AFE2 /* BooksTableViewController.swift */; };
+		2869283522BA98430005AFE2 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2869283422BA98430005AFE2 /* BookCell.swift */; };
+		2869283B22BAA11A0005AFE2 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2869283A22BAA11A0005AFE2 /* BookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		283CFC8C22B14D8000C65BD0 /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283CFC8F22B14D8000C65BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		283CFC9122B14D8000C65BD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		283CFC9422B14D8000C65BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		283CFC9622B14D8200C65BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283CFC9922B14D8200C65BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		283CFC9B22B14D8200C65BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2869282A22BA30B40005AFE2 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		2869283022BA93AB0005AFE2 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		2869283222BA93FA0005AFE2 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
+		2869283422BA98430005AFE2 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		2869283A22BAA11A0005AFE2 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				283CFC8F22B14D8000C65BD0 /* AppDelegate.swift */,
-				283CFC9122B14D8000C65BD0 /* ViewController.swift */,
 				283CFC9322B14D8000C65BD0 /* Main.storyboard */,
+				2869283022BA93AB0005AFE2 /* Book.swift */,
+				2869283222BA93FA0005AFE2 /* BooksTableViewController.swift */,
+				2869283A22BAA11A0005AFE2 /* BookViewController.swift */,
+				2869283422BA98430005AFE2 /* BookCell.swift */,
+				2869282A22BA30B40005AFE2 /* ARViewController.swift */,
 				283CFC9622B14D8200C65BD0 /* Assets.xcassets */,
 				283CFC9822B14D8200C65BD0 /* LaunchScreen.storyboard */,
 				283CFC9B22B14D8200C65BD0 /* Info.plist */,
@@ -91,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Артем Мартиросян";
 				TargetAttributes = {
 					283CFC8B22B14D8000C65BD0 = {
@@ -100,10 +112,11 @@
 				};
 			};
 			buildConfigurationList = 283CFC8722B14D8000C65BD0 /* Build configuration list for PBXProject "BookShelf" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				ru,
 				en,
 				Base,
 			);
@@ -135,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283CFC9222B14D8000C65BD0 /* ViewController.swift in Sources */,
 				283CFC9022B14D8000C65BD0 /* AppDelegate.swift in Sources */,
+				2869282B22BA30B40005AFE2 /* ARViewController.swift in Sources */,
+				2869283322BA93FA0005AFE2 /* BooksTableViewController.swift in Sources */,
+				2869283B22BAA11A0005AFE2 /* BookViewController.swift in Sources */,
+				2869283122BA93AB0005AFE2 /* Book.swift in Sources */,
+				2869283522BA98430005AFE2 /* BookCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +183,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -213,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -227,6 +245,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -268,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
