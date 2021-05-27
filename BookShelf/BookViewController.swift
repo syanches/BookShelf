@@ -69,7 +69,7 @@ class BookViewController: UITableViewController {
         guard let book = book else { return }
         let activityController = UIActivityViewController(activityItems: [book.title,book.author], applicationActivities: nil)
         activityController.popoverPresentationController?.sourceView = sender
-        
+//        activityController.setValue("Share this post!", forKey: "subject")
         present(activityController, animated: true, completion: nil)
     }
 

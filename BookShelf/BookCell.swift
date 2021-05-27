@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol BookCellDelegate: class {
+protocol BookCellDelegate {
     func checkmarkTapped(sender: BookCell)
 }
 
